@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List App</title>
+    <title>E-commerce Website</title>
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-       <div class="todo-app">
-            <h2>To-Do List <img src="images/icon.png" alt="icon"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your task...">
-                <button onclick="addTask()">Add</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li> -->
+    
+    <section id="header">
+        <a href="#" ><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a> </li> 
+                <li><a href="shop.html">Shop</a> </li>
+                <li><a href="blog.html">Blog</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-       </div> 
-    </div>
-    <script src="script.js"></script>  <!--Link to the JavaScript file -->
+        </div>
+    
+    </section>
+
+    <section id="hero">
+         <h4>Trade-in-Offer</h4>
+         <h2>Super Value Deals</h2>
+         <h1>on all products</h1>
+         <p>Save more with coupons & up to 70% off</p>
+         <button>Shop Now</button>
+
+    </section>
+
+    <section id="feature">
+        <div class="fe-box">
+            <img src="images/feat1.png" alt="">   </div>
+            <h6>Free Shipping</h6>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
