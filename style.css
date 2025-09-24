@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+
+}
+
+.section-m1 {
+    margin: 40px 0;
+
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+ body {
+    width: 100%;
+ }
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px ;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999; /* ensures header is on top of other elements */
+    position: sticky; /* makes header stick to top */
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex; /* makes info horizontal */
+    align-items: center;
+    justify-items: center;
+
+}
+#navbar li {
+    list-style: none; /*  removes bullet points */
+    padding: 0 20px; /* adds space between links */
+   
+}
+
+#navbar li a {
+     text-decoration:none; /* removes underline from links */
+     font-size: 16px;
+     font-weight: 600;
+     color: #1a1a1a;
+     transition: 0.3s ease;
+}
+ 
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178 ;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after { /* use pseudoclass for display "after" section is clicked */
+    content: '';
+    display: block;
+    width: 30%; /* length of active page underline */
+    height: 2px;
+    background: #088178;
+    margin-top: 4px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0
+}
+#feature .fe-box:hover { 
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+} 
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    padding: 6px 0px 6px 0px;
+    line-height: 1;
+    border-radius: 4px;
+    color:rgba(41, 3, 54, 0.616);
+    background-color: #fddde4;  
+}
+
+#feature .fe-box:nth-child(2) h6{ /* changes background color of third box*/
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(3) h6{ /* changes background color of third box*/
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #fff2e5;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap; /* allows items to wrap to next line if screen is too small */
+    gap: 20px; /* adds space between items */
+}
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.3s ease;
+    position:relative; 
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+#product1 .pro img {
+    width:100%;
+    border-radius: 20px;
+}
+#product1 .pro .description {
+    text-align:start;
+    padding: 10px 0;
+}
+#product1 .pro .description span { /* styling product brand name */
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .description h5{ /* styling product title */
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+#product1 .pro .description i { /* styling product stars */
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+#product1 .pro .description h4{
+    padding-top: 7px;
+    color: #088178;
+    font-size: 15px;
+}
+#product1 .pro .cart{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border:1 px solid #cce7d0;
+    position: absolute; /* since this is a child element, need to indicate position:relative in the parent element(#product .pro)*/
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background-image: url("onlineStore/images/features/banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#banner h4 {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+#banner h2 {
+    color: white;
+    font-size: 30px;
+}
+#banner h2 span {
+    color: #48ffe7;
+}
+#banner button:hover {
+    background-color: #088178;
+    color: white;
+}
+
+/* Home Page */
+#hero {
+    background-image: url("onlineStore/images/hero.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0 right 0 ;
+    padding: 0 80px;
+    display: flex; /* puts items in row by default */
+    flex-direction: column; /* puts items in column */
+    align-items: flex-start;
+    justify-content: center;
+}   
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    background-image: url("onlineStore/images/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 65px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+
+/* Shop Page */
+
+/* Product Page */
+
+/* Cart Page */
