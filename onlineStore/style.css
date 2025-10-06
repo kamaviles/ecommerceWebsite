@@ -518,7 +518,12 @@ footer .copyright {
     background-color: #E3E6F3;
     padding: 80px 30px;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
     }
+#navbar.active {
+    right: 0px;
+}
+
 #navbar li {
     margin-bottom: 25px;
 }
@@ -532,5 +537,13 @@ footer .copyright {
     font-size: 24px;
     padding-left: 20px;
 }
+#close {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: black;
+    font-size: 20px;
+}
+
 
 }
